@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa - Arka</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Arka Logo.png" alt="Logo de Arka">
+        </div>
+        <div class="logo2">
+            <img src="img/ArcaLetras.png" alt="ARKA">
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- Botón para alternar el menú -->
+        <nav>
+            <ul>
+                <li><a href="#hombre">Hombre</a></li>
+                <li><a href="#mujer">Mujer</a></li>
+                <li><a href="#novedades">Novedades</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <input type="text" placeholder="Buscar...">
+            <a href="#usuario">👤</a>
+            <a href="#carrito" id="cart-icon">🛒 (0)</a>
+        </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="#perfil">Mi Perfil</a></li>
+            <li><a href="#mis-pedidos">Mis Pedidos</a></li>
+            <li><a href="#favoritos">Favoritos</a></li>
+            <li><a href="#ajustes">Ajustes</a></li>
+            <li><a href="#ayuda">Ayuda</a></li>
+        </ul>
+    </aside>
+
+    <section class="banner">
+        <h1>Descubre nuestra nueva colección de invierno</h1>
+        <a href="#comprar" class="cta-button">¡Comprar Ahora!</a>
+    </section>
+    <section class="productos">
+        <h2>Productos Destacados</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="img_ropa/Camisa_casual.png" alt="Camisa Casual">
+                <h3>Camisa Casual</h3>
+                <p class="precio">$29.99</p>
+                <button onclick="addToCart('Camisa Casual', 29.99)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img_ropa/Jeans_para_mujer.png" alt="Pantalones para Mujer">
+                <h3>Pantalones para Mujer</h3>
+                <p class="precio">$49.99</p>
+                <button onclick="addToCart('Pantalones de Jeans', 49.99)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img_ropa/Chaqueta_de_cuero_mujer.png" alt="Chaqueta de Cuero">
+                <h3>Chaqueta de Cuero</h3>
+                <p class="precio">$89.99</p>
+                <button onclick="addToCart('Chaqueta de Cuero', 89.99)">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="promociones">
+        <h2>Promociones Especiales</h2>
+        <div class="promo">
+            <p>20% de descuento en tu primera compra</p>
+        </div>
+        <div class="promo">
+            <p>Envío gratis en compras superiores a $50</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contacto">
+            <p>Contacto: info@arka.com | Tel: 123-456-7890</p>
+        </div>
+        <div class="redes-sociales">
+            <a href="#facebook">Facebook</a>
+            <a href="#instagram">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="Main.js"></script>
+</body>
+</html>

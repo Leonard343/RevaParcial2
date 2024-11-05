@@ -1,0 +1,193 @@
+/* Estilo general para la vista de carrito */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #d9d9d9, #4d4d4d);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.logo2 img {
+    height: 40px;
+    width: auto;
+    margin-right: 600px;
+}
+
+.menu-toggle, .menu-return {
+    background: #ff5733;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 20px;
+}
+
+.menu-toggle:hover, .menu-return:hover {
+    background-color: #e04e28;
+}
+
+.carrito-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Contenedor de productos en el carrito */
+.carrito-items {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+/* Elementos individuales dentro del carrito */
+.carrito-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.carrito-item:last-child {
+    border-bottom: none;
+}
+
+.carrito-item img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.item-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.remove-button {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.carrito-resumen {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.carrito-resumen strong {
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+}
+
+.cta-button {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #ff5733;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    bottom: 0;
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+}
+
+.sidebar.show {
+    left: 0;
+}
+
+.sidebar h2 {
+    margin-top: 0; /* Eliminar margen superior del título */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0; /* Espacio entre los elementos del menú */
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Transición suave */
+}
+
+.sidebar ul li a:hover {
+    color: #ff5733; /* Color de resalte al pasar el mouse en la barra lateral */
+}
+
+footer {
+    background-color: #333; /* Color oscuro para el footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.contacto {
+    margin-bottom: 10px; /* Espacio inferior en contacto */
+}
+
+.redes-sociales a {
+    color: white; /* Color blanco para las redes sociales */
+    text-decoration: none;
+    margin: 0 10px; /* Espacio entre enlaces de redes sociales */
+}
+
+.redes-sociales a:hover {
+    color: #ff5733; /* Color de resalte al pasar el mouse */
+}
+
+.Titulo {
+    margin-left: 60px;
+}

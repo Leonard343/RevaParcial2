@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Arka</title>
+    <link rel="stylesheet" href="Carrito.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Arka Logo.png" alt="Logo de Arka">
+        </div>
+        <div class="logo2">
+            <img src="img/ArcaLetras.png" alt="ARKA">
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <a href="Main.html" class="menu-return">⬅ Volver a Tienda</a>
+        <span id="cart-icon">🛒 (0)</span> <!-- Icono del carrito -->
+    </header>
+    <aside class="sidebar" id="sidebar">
+        <h2>Menú</h2>
+        <ul>
+            <li><a href="#perfil">Mi Perfil</a></li>
+            <li><a href="#mis-pedidos">Mis Pedidos</a></li>
+            <li><a href="#favoritos">Favoritos</a></li>
+            <li><a href="#ajustes">Ajustes</a></li>
+            <li><a href="#ayuda">Ayuda</a></li>
+        </ul>
+    </aside>
+    <h1 class="Titulo">Carrito de Compras</h1>
+
+    <main class="carrito-container">
+        <section class="carrito-items">
+            <h2>Artículos en tu Carrito</h2>
+            <!-- Lista de artículos agregados al carrito (se llenará dinámicamente) -->
+        </section>
+
+        <aside class="carrito-resumen">
+            <h2>Resumen del Pedido</h2>
+            <p>Subtotal: $0.00</p>
+            <p>Descuento: -$0.00</p>
+            <p>Envío: $5.00</p>
+            <p><strong>Total: $5.00</strong></p>
+            <button class="cta-button" onclick="checkout()">Proceder al Pago</button>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="contacto">
+            <p>Contacto: info@arka.com | Tel: 123-456-7890</p>
+        </div>
+        <div class="redes-sociales">
+            <a href="#facebook">Facebook</a>
+            <a href="#instagram">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="Carrito.js"></script>
+</body>
+</html>
